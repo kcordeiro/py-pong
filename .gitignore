@@ -1,0 +1,27 @@
+__pycache__/
+
+# test/build files
+.Python
+build/
+dist/
+sdist/
+var/
+wheels/
+*.egg-info/
+*.egg
+*.swp
+.cache/
+
+# MacOS
+**/.DS_Store
+
+# virtualenv
+.venv/
+venv/
+
+# mypy
+.mypy_cache/
+
+# IDE
+.vscode/
+.idea/

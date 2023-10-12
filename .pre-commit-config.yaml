@@ -1,0 +1,49 @@
+---
+repos:
+  - repo: local
+    hooks:
+      - id: end-of-file-fixer
+        name: end-of-file-fixer
+        entry: end-of-file-fixer
+        language: system
+        types:
+          - text
+
+      - id: trailing-whitespace-fixer
+        name: trailing-whitespace-fixer
+        entry: trailing-whitespace-fixer
+        language: system
+        types:
+          - text
+
+      - id: fix-encoding-pragma
+        name: fix-encoding-pragma
+        entry: fix-encoding-pragma
+        args:
+          - "--remove"
+        language: system
+        types:
+          - python
+
+      - id: black
+        name: black
+        entry: black
+        language: system
+        types:
+          - python
+
+      - id: check-merge-conflict
+        name: check-merge-conflict
+        entry: check-merge-conflict
+        language: system
+        types:
+          - text
+
+      - id: reorder-python-imports
+        name: reorder-python-imports
+        entry: reorder-python-imports
+        args:
+          - "--unclassifiable-application-module=py_pong"
+        language: system
+        types:
+          - python
