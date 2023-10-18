@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "py-pong"
-version = "0.1.0"
+version = "0.2.0"
 description = "An implementation of Pong in Python"
 authors = ["Kasey Cordeiro Brown <cordeirokj@gmail.com>"]
 readme = "README.md"
